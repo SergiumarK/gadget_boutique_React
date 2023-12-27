@@ -1,0 +1,23 @@
+[
+    {
+        "id": "iPhone-14-Pro",
+        "brand": "Apple",
+        "model": "14 Pro",
+        "image": "https://www.smart.md/image/cache/data/results-photos/smartgsm/Apple-iPhone-14-Pro-128GB-Deep-Purple-335x335.jpg",
+        "price": 24500
+    },
+    {
+        "id": "Samsung-S23-Ultra",
+        "brand": "Samsung",
+        "model": "S-23-Ultra",
+        "image": "https://www.smart.md/image/cache/data/IMAGINIR/Samsung-Galaxy-S23-Ultra-8256GB-Dual-Sim-Phantom-Black_1-335x335.jpg",
+        "price": 24000
+    },
+    {
+        "id": "Xiaomi-13-Pro",
+        "brand": "Xiaomi",
+        "model": "13 Pro",
+        "image": "https://www.smart.md/image/cache/data/results-photos/smartgsm/Xiaomi-13T-Pro-5G-Dual-Sim-12512GB-Black-335x335.jpg",
+        "price": 14000
+    }
+]
