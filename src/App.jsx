@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Contacts from "./pages/Contacts"
 import Cart from "./pages/Cart"
 import Context from "./data/Context"
+import Product from "./pages/Product"
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: "/cart",
                 element: <Cart />
+            },
+            {
+                path: "/product/:id", //id este un parametru care se poate modifica
+                element: <Product />
             }
         ]
     }

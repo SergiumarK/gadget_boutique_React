@@ -9,7 +9,7 @@ const Home = () => {
       <div className='flex gap-4'>
         {
           data.map(obj => (
-            <a href={`/product/${obj.id}`} className="h-80 w-64 bg-grey-100 border border-grey-200 rounded overflow-hidden p-2" key={obj.id}>
+            <a href={`/product/${obj.id}`} className="h-80 w-64 bg-grey-100 border border-grey-200 rounded overflow-hidden p-2 hover:border-blue-600 hover:shadow-lg" key={obj.id}>
               <img  src={obj.image} alt={obj.id} />
               <div className='p-1'>
                 <h1 className='font-semibold text-xl'>{obj.brand} {obj.model}</h1>
