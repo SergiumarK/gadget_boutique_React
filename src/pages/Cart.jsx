@@ -29,7 +29,8 @@ const Cart = () => {
   return (
     <div>
       <h1 className='text-2xl font-semibold'>Cart</h1>
-      <div className='flex flex-col gap-2'>
+      <div className='grid grid-cols-3 '>
+        <div className='col-span-2 flex flex-col gap-2'>
         {
           cart.map(obj => (
             <div className=' grid grid-cols-5 p-2 rounded justify-items-center items-center' key={obj.id}>
@@ -53,6 +54,26 @@ const Cart = () => {
             </div>
           ))
         }
+        </div>
+        <div>
+          <h1>Total</h1>
+          <div>
+            {
+              cart.map(obj => (
+                <div>
+                  <h1>{obj.brand} {obj.model}</h1>
+                  <p>{obj.quantity} x {obj.price} MDL = {obj.quantity * obj.price} MDL</p>
+                </div>
+              ))
+            }
+          </div>
+          <h1>
+            {
+              cart.reduce((sum, obj) => sum +(obj.quantity * obj.price), 0)
+            }
+            MDL
+          </h1>
+        </div>
       </div>
     </div>
   )
