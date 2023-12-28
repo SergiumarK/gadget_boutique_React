@@ -28,7 +28,7 @@ const Context = ({children}) => {
     }
 
     return (
-        <Ctx.Provider value={{data: data, cart: cart, addToCart: addToCart}}>
+        <Ctx.Provider value={{data: data, cart: cart, addToCart: addToCart, setCart: setCart}}>
             {children}
         </Ctx.Provider>
     )
